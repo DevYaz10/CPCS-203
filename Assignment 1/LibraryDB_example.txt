@@ -1,0 +1,235 @@
+=============== Borrow Record Information ===============
+Record No= 1
+Fine Code= LateReturn
+Severity= 2
+Base Fine= 20.0
+
+Book Information
+ISBN= 9780134685991
+Title= JavaProgramming
+Author= Deitel
+Publish Year= 2019
+
+Member Information
+ID= 2023123456
+Name= Ahmed Saleh
+Birth Year= 2011
+
+Total Fine= 120.0
+
+=============== Borrow Record Information ===============
+Record No= 2
+Fine Code= DamagedBook
+Severity= 2
+Base Fine= 300.0
+
+Book Information
+ISBN= 9781492056526
+Title= JavaOOP
+Author= Ross
+Publish Year= 1998
+
+Member Information
+ID= 2023123456
+Name= Ahmed Saleh
+Birth Year= 2011
+
+Total Fine= 450.0
+
+=============== Borrow Record Information ===============
+Record No= 3
+Fine Code= DamagedBook
+Severity= 1
+Base Fine= 100.0
+
+Book Information
+ISBN= 9780321356680
+Title= DataStructures
+Author= Weiss
+Publish Year= 2006
+
+Member Information
+ID= 2023987456
+Name= Sara Ali
+Birth Year= 2006
+
+Total Fine= 100.0
+
+=============== Borrow Record Information ===============
+Record No= 4
+Fine Code= LostBook
+Severity= 1
+Base Fine= 500.0
+
+Book Information
+ISBN= 9781492056270
+Title= CleanCode
+Author= Martin
+Publish Year= 1999
+
+Member Information
+ID= 2022456789
+Name= Omar Khaled
+Birth Year= 1995
+
+Total Fine= 550.0
+
+=============== Borrow Record Information ===============
+Record No= 5
+Fine Code= LateReturn
+Severity= 3
+Base Fine= 50.0
+
+Book Information
+ISBN= 9780134685991
+Title= JavaProgramming
+Author= Deitel
+Publish Year= 2019
+
+Member Information
+ID= 2022765432
+Name= Laila Hassan
+Birth Year= 2010
+
+Total Fine= 150.0
+
+=============== Borrow Record Information ===============
+Record No= 6
+Fine Code= LateReturn
+Severity= 1
+Base Fine= 10.0
+
+Book Information
+ISBN= 9780321356680
+Title= DataStructures
+Author= Weiss
+Publish Year= 2006
+
+Member Information
+ID= 2023123456
+Name= Ahmed Saleh
+Birth Year= 2011
+
+Total Fine= 110.0
+
+=============== Borrow Record Information ===============
+Record No= 7
+Fine Code= DamagedBook
+Severity= 2
+Base Fine= 300.0
+
+Book Information
+ISBN= 9781492056270
+Title= CleanCode
+Author= Martin
+Publish Year= 1999
+
+Member Information
+ID= 2023987456
+Name= Sara Ali
+Birth Year= 2006
+
+Total Fine= 350.0
+
+=============== Borrow Record Information ===============
+Record No= 8
+Fine Code= LateReturn
+Severity= 2
+Base Fine= 20.0
+
+Book Information
+ISBN= 9780134685991
+Title= JavaProgramming
+Author= Deitel
+Publish Year= 2019
+
+Member Information
+ID= 2022456789
+Name= Omar Khaled
+Birth Year= 1995
+
+Total Fine= 20.0
+
+=============== Borrow Record Information ===============
+Record No= 9
+Fine Code= LostBook
+Severity= 1
+Base Fine= 500.0
+
+Book Information
+ISBN= 9780321356680
+Title= DataStructures
+Author= Weiss
+Publish Year= 2006
+
+Member Information
+ID= 2022765432
+Name= Laila Hassan
+Birth Year= 2010
+
+Total Fine= 600.0
+
+=============== Borrow Record Information ===============
+Record No= 10
+Fine Code= LateReturn
+Severity= 3
+Base Fine= 50.0
+
+Book Information
+ISBN= 9781492056270
+Title= CleanCode
+Author= Martin
+Publish Year= 1999
+
+Member Information
+ID= 2023123456
+Name= Ahmed Saleh
+Birth Year= 2011
+
+Total Fine= 200.0
+
+=============== Borrow Record Information ===============
+Record No= 11
+Fine Code= LateReturn
+Severity= 2
+Base Fine= 20.0
+
+Book Information
+ISBN= 9780134685991
+Title= JavaProgramming
+Author= Deitel
+Publish Year= 2019
+
+Member Information
+ID= 2023987456
+Name= Sara Ali
+Birth Year= 2006
+
+Total Fine= 20.0
+
+=============== Borrow Record Information ===============
+Record No= 12
+Fine Code= LostBook
+Severity= 1
+Base Fine= 500.0
+
+Book Information
+ISBN= 9781492056526
+Title= JavaOOP
+Author= Ross
+Publish Year= 1998
+
+Member Information
+ID= 2022765432
+Name= Laila Hassan
+Birth Year= 2010
+
+Total Fine= 650.0
+
+
+-------- Total Borrow(s) Per Member --------
+Member ID     Name           Total Borrows
+2023123456    Ahmed Saleh    4
+2023987456    Sara Ali       3
+2022456789    Omar Khaled    2
+2022765432    Laila Hassan   3
