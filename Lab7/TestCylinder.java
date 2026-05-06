@@ -1,24 +1,18 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class TestCylinder {
-   public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Cylinder cy = new Cylinder();
 
-      System.out.println("***Cylinder***");
-      System.out.println("----------");
-      System.out.print("Please, enter the cylinder's base radius:");
-      double radius = input.nextDouble();
-      System.out.println("----------");
-      System.out.print("Please, enter the cylinder's height:");
-      double height = input.nextDouble();
-      System.out.println("----------");
 
-      Cylinder cylinder = new Cylinder(radius, height);
+        System.out.printf("***Cylinder***%n--------------%nPlease, enter the cylinder's base radius:");
+        cy.setRadius(in.nextDouble());
 
-      System.out.println("Cylinder information:");
-      System.out.println(cylinder);
-      System.out.println("Surface area=" + cylinder.getArea() + " , volume=" + cylinder.getVolume());
+        System.out.printf("--------------%nPlease, enter the cylinder's height:");
+        cy.setHeight(in.nextDouble());
+        
+        System.out.printf("--------------%nCylinder information:%n%s", cy.toString());
 
-      input.close();
-   }
+    }
 }
