@@ -1,27 +1,22 @@
-package DailyStoreReport;
-
-
 public class Regular extends Customer {
-    private static final double discountRate = 0.05;
+    private final double discountRate = 0.05;
 
-    public Regular()
-    {
-        super();
+    public Regular() {
     }
 
-    public Regular(String name,double purchasesCost)
-    {
-        super(name,purchasesCost);
+    public Regular(String name, double purchasesCost) {
+        super(name, purchasesCost);
     }
 
-
-    public double getPurchasesCost()
-    {
-        return super.getPurchasesCost()*(1-discountRate);
+    @Override
+    public double getPurchasesCost() {
+        return super.getPurchasesCost() * (1 - discountRate);
     }
 
-    public String toString()
-    {
-        return super.toString().replaceFirst("Customer","Regular Customer")+" , cost after discount= "+getPurchasesCost();
+    @Override
+    public String toString() {
+        return "Regular Customer name:" + getName() + ", his/her purchases' Cost:" + super.getPurchasesCost()
+                + ", cost after discount= " + getPurchasesCost();
     }
+
 }

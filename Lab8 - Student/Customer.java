@@ -1,51 +1,43 @@
-package DailyStoreReport;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class Customer {
-    //Initialize the name with empty string  and the purchasesCost with zero
-    private String name;
-    private double purchasesCost;
-    //------------------------------
-    public Customer ()
-    {
-        name="";
-        purchasesCost=0;
+    private String name = "";
+    private double purchasesCost = 0;
+
+    public Customer() {
     }
-    //-------------------------------
-    public Customer (String name,double purchasesCost)
-    {
-        this.name=name;
-        this.purchasesCost=purchasesCost;
+
+    public Customer(String name, double purchasesCost) {
+        this.name = name;
+        this.purchasesCost = purchasesCost;
     }
-    //--------------------------------
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
-    //--------------------------------
-    public void setName(String n)
-    {
-        name=n;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    //--------------------------------
-    public double getPurchasesCost()
-    {
+
+    public double getPurchasesCost() {
         return purchasesCost;
     }
-    //--------------------------------
-    public void setPurchasesCost(double c)
-    {
-        purchasesCost=c;
+
+    public void setPurchasesCost(double purchasesCost) {
+        this.purchasesCost = purchasesCost;
     }
-    //--------------------------------
-    public void ReadCustInfo(Scanner in){
-        name=in.next();
-        purchasesCost=in.nextDouble();
+
+    public void ReadCustInfo(Scanner in) {
+        System.out.print("Enter customer's name:");
+        setName(in.nextLine());
+        System.out.print("Enter customer's Purchases Cost:");
+        setPurchasesCost(in.nextDouble());
+        in.nextLine();
     }
-    //--------------------------------
-    public String toString()
-    {
-        return "Customer name:"+ name+" , his/her purchases' Cost:"+purchasesCost;
-    }        
+
+    @Override
+    public String toString() {
+        return "New Customer name:" + getName() + ", his/her purchases' Cost:" + getPurchasesCost();
+    }
 }
