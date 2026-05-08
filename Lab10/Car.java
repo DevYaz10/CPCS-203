@@ -1,6 +1,5 @@
 public class Car extends basicVehicle {
-
-    public Car(int noOfWheels, int NoOfSeats, int noOfDoors, String type) {
-        super(noOfWheels, NoOfSeats, noOfDoors, type);
+    public Car(int noOfwheels, int noOfSeats, int noOfDoors, String type) {
+        super(noOfwheels, noOfSeats, noOfDoors, type);
     }
 }

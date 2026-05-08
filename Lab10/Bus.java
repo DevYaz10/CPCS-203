@@ -1,28 +1,21 @@
 public class Bus extends basicVehicle {
-
     private String driverName;
 
-    public Bus(int noOfWheels, int NoOfSeats, int noOfDoors, String type, String driverFName,
-            String driverLName) {
-        super(noOfWheels, NoOfSeats, noOfDoors, type);
-        setDriverName(driverFName, driverLName);
-    }
-
-    private void setDriverName(String driverFName, String driverLName) {
-        driverName = driverFName.toUpperCase() + " " + driverLName.substring(0, 1).toUpperCase()
-                + driverLName.substring(1).toLowerCase();
+    public Bus(int noOfwheels, int noOfSeats, int noOfDoors, String type, String driverName) {
+        super(noOfwheels, noOfSeats, noOfDoors, type);
+        this.driverName = driverName;
     }
 
     public String getDriverName() {
         return driverName;
     }
 
-    public void setDriverName(String driverName) {
-        this.driverName = driverName;
+    public void setDriverName(String driverFname, String driverLname) {
+        driverName = driverFname + " " + driverLname;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nDriver : " + driverName;
+        return super.toString() + String.format("%nDriver: %s", getDriverName());
     }
 }
