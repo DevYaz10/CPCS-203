@@ -28,7 +28,7 @@ public class Cylinder extends Circle {
 
     @Override
     public double getArea() {
-        return 2 * (super.pie * super.getRadius() * height + getBaseArea());
+        return 2 * (super.getArea()) + 2 * Math.PI * super.getRadius() * height;
     }
 
     public double getVolume() {
@@ -37,10 +37,13 @@ public class Cylinder extends Circle {
 
     @Override
     public String toString() {
-        return String.format(
-            "Base   %s, height=%.1f, base area=%.14f%nSurface area=%.14f, volume=%.14f", 
-            super.toString(), getHeight(), getBaseArea(), getArea(), getVolume()
-        );
+        return super.toString() + ", " + height + ", base area=" + super.getArea() +"\n" +  
+        "Surface area" + getArea() + ", volume" + getVolume();
     }
 
+    
+
+    
+
+    
 }

@@ -1,10 +1,9 @@
-
 public class Circle {
     private double radius = 1.0;
     private String color = "red";
-    public static double pie = Math.PI;
 
-    public Circle() {}
+    public Circle() {
+    }
 
     public Circle(double radius) {
         this.radius = radius;
@@ -19,27 +18,26 @@ public class Circle {
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
     public String getColor() {
         return color;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    
     public double getArea() {
-        return pie * radius * radius;
+        return Math.PI * radius * radius;
     }
-
 
     @Override
     public String toString() {
-        return "radius=" + radius + " ,color=" + color;
+        return "Base radius=" + radius + ", color=" + color;
     }
 
+    
 }
