@@ -1,28 +1,30 @@
 public class RationalNumber {
-    private int numer;
-    private int denom;
+    private int numerator;
+    private int denominator;
 
-    public RationalNumber(int numer, int denom) {
-        this.numer = numer;
-        this.denom = denom;
+    public RationalNumber(int denominator, int numerator) {
+        this.denominator = denominator;
+        this.numerator = numerator;
     }
 
     public RationalNumber add(RationalNumber op2) {
-        //TODO implement addetion: a/b + c/d = (ad + bc)/bd
-        int newNumer = this.numer * op2.denom + this.denom * op2.numer;
-        int newDenom = this.denom * op2.denom;
-        return new RationalNumber(newNumer, newDenom);
+        int newNumer = this.numerator*op2.denominator + this.denominator*op2.denominator;
+        int newDenom = this.denominator*op2.denominator;
+        return new RationalNumber(newDenom, newNumer);
     }
 
     public RationalNumber multiply(RationalNumber op2) {
-        //TODO implement multiplication a/b × c/d = ac/bd
-        int newNumer = this.numer * op2.numer;
-        int newDenom = this.denom * op2.denom;
-        return new RationalNumber(newNumer, newDenom);
+        int newNumer = this.numerator*op2.numerator / this.denominator*op2.denominator;
+        int newDenom = this.denominator*op2.denominator;
+        return new RationalNumber(newDenom, newNumer);
     }
 
     @Override
     public String toString() {
-        return numer + "/" + denom;
+       return numerator + "/" + denominator;
     }
+
+    
+
+
 }
