@@ -19,7 +19,11 @@ public class Main {
 
             if (type == "v") {
                 customers[i] = new VIP(temp.getName(), temp.getPurchasesCost());
-            }
+            } else if (type == "r") {
+                customers[i] = new Regular(temp.getName(), temp.getPurchasesCost());
+            } else {
+                customers[i] = new New(temp.getName(), temp.getPurchasesCost());
+            } 
             
         }
     }

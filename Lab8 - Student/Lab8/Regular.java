@@ -4,9 +4,8 @@ public class Regular extends Customer{
     public Regular() {
     }
 
-    public Regular(double discountRate, String name, double purchasesCost) {
+    public Regular(String name, double purchasesCost) {
         super(name, purchasesCost);
-        this.discountRate = discountRate;
     }
 
     @Override

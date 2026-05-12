@@ -5,10 +5,8 @@ public class VIP extends Customer {
     public VIP() {
     }
 
-    public VIP(double GiftCertificateValue, double discountRate, String name, double purchasesCost) {
+    public VIP(String name, double purchasesCost) {
         super(name, purchasesCost);
-        this.GiftCertificateValue = GiftCertificateValue;
-        this.discountRate = discountRate;
     }
     
     @Override
