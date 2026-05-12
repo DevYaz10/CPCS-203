@@ -29,9 +29,9 @@ public class Customer {
     }
     
     public void ReadCustomerInfo(Scanner in) {
-        System.out.println("Enter customer's name:");
+        System.out.print("Enter customer's name:");
         name = in.nextLine();
-        System.out.println("Enter customer's Purchases Cost:");
+        System.out.print("Enter customer's Purchases Cost:");
         purchasesCost = in.nextDouble();
     }
 
